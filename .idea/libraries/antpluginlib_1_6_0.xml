@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="antpluginlib_1.6.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/antpluginlib_1.6.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

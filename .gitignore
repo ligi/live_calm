@@ -1,0 +1,7 @@
+ant.properties
+build.xml
+example_src/
+gen/
+local.properties
+out/
+proguard-project.txt
