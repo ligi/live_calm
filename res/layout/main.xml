@@ -25,6 +25,13 @@
             android:id="@+id/rcvCount"
             />
 
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/rate"
+            />
+
 
 </LinearLayout>
 
