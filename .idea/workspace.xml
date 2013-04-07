@@ -19,16 +19,26 @@
         <option name="nightMode" value="notnight" />
         <option name="targetHashString" value="android-14" />
         <option name="theme" value="Theme" />
+        <option name="visible" value="false" />
       </GlobalState>
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bcc4b86-9f85-4987-9492-7672271f0b71" name="Default" comment="" />
+    <list default="true" id="5bcc4b86-9f85-4987-9492-7672271f0b71" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ligi/live_calm/MyActivity.java" afterPath="$PROJECT_DIR$/src/org/ligi/live_calm/MyActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="live_calm.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="$PROJECT_DIR$/res/values/strings.xml" changelist="5bcc4b86-9f85-4987-9492-7672271f0b71" time="1365331612643" ignored="false" />
-    <file path="/MyActivity.java" changelist="5bcc4b86-9f85-4987-9492-7672271f0b71" time="1365336336272" ignored="false" />
-    <file path="/main.xml" changelist="5bcc4b86-9f85-4987-9492-7672271f0b71" time="1365336307760" ignored="false" />
+    <file path="/MyActivity.java" changelist="5bcc4b86-9f85-4987-9492-7672271f0b71" time="1365341566394" ignored="false" />
+    <file path="/main.xml" changelist="5bcc4b86-9f85-4987-9492-7672271f0b71" time="1365339795360" ignored="false" />
+    <file path="/strings.xml" changelist="5bcc4b86-9f85-4987-9492-7672271f0b71" time="1365338661796" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="5bcc4b86-9f85-4987-9492-7672271f0b71" time="1365341720862" ignored="false" />
+    <file path="$PROJECT_DIR$/gen/org/ligi/live_calm/R.java" changelist="5bcc4b86-9f85-4987-9492-7672271f0b71" time="1365341742185" ignored="false" />
+    <file path="/Dummy.txt" changelist="5bcc4b86-9f85-4987-9492-7672271f0b71" time="1365344159448" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,25 +100,34 @@
       <file leaf-file-name="MyActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/ligi/live_calm/MyActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="109" selection-start="6398" selection-end="6398" vertical-scroll-proportion="-11.2">
+            <state line="158" column="17" selection-start="7815" selection-end="7815" vertical-scroll-proportion="-9.0">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#850#5076#0" expanded="true" />
-                <element signature="e#5056#5057#0" expanded="true" />
-                <element signature="e#5078#5822#0" expanded="true" />
-                <element signature="e#5261#5779#0" expanded="true" />
-                <element signature="e#5752#5753#0" expanded="true" />
-                <element signature="e#5803#5804#0" expanded="true" />
-                <element signature="e#5922#6741#0" expanded="true" />
-                <element signature="e#6202#6715#0" expanded="true" />
-                <element signature="e#6696#6697#0" expanded="true" />
-                <element signature="e#6730#6731#0" expanded="true" />
+                <element signature="e#1292#5513#0" expanded="true" />
+                <element signature="e#5493#5494#0" expanded="true" />
+                <element signature="e#5515#6259#0" expanded="true" />
+                <element signature="e#5698#6216#0" expanded="true" />
+                <element signature="e#6189#6190#0" expanded="true" />
+                <element signature="e#6240#6241#0" expanded="true" />
+                <element signature="e#6359#7685#0" expanded="true" />
+                <element signature="e#6639#7659#0" expanded="true" />
+                <element signature="e#7640#7641#0" expanded="true" />
+                <element signature="e#7674#7675#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ic_launcher.png" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="47" selection-start="626" selection-end="626" vertical-scroll-proportion="0.5102041">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ic_launcher.png" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/drawable/ic_launcher.png">
           <provider selected="true" editor-type-id="images">
             <state />
@@ -130,7 +149,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="33" selection-start="1055" selection-end="1055" vertical-scroll-proportion="-12.92">
+            <state line="37" column="31" selection-start="1238" selection-end="1238" vertical-scroll-proportion="-13.04">
               <folding />
             </state>
           </provider>
@@ -154,22 +173,32 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/org/ligi/live_calm/foo" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/src/org/ligi/live_calm/MyActivity.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="-4" />
-    <option name="width" value="1368" />
-    <option name="height" value="773" />
+    <option name="x" value="6" />
+    <option name="y" value="22" />
+    <option name="width" value="1360" />
+    <option name="height" value="772" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -270,18 +299,20 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="recentsLimit" value="5" />
+    <property name="OverrideImplement.combined" value="false" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/android-query.0.24.3.jar!/" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="AndroidLayoutSelectedEditor" value="text-editor" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
   </component>
   <component name="RunManager" selected="Android Application.live_calm">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -430,6 +461,24 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="5bcc4b86-9f85-4987-9492-7672271f0b71" name="Default" comment="" />
@@ -439,14 +488,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-4" width="1368" height="773" extended-state="6" />
+    <frame x="6" y="22" width="1360" height="772" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287879" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287879" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3285061" sideWeight="0.7483974" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3285061" sideWeight="0.7483974" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.6704" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.7483974" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -459,8 +508,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.7488" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2512" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2515244" sideWeight="0.7483974" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25160256" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -544,38 +593,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable/ic_launcher.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="37" selection-start="88" selection-end="88" vertical-scroll-proportion="0.06802721">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="33" selection-start="1055" selection-end="1055" vertical-scroll-proportion="-12.92">
+        <state line="37" column="31" selection-start="1238" selection-end="1238" vertical-scroll-proportion="-13.04">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/ligi/live_calm/MyActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="109" selection-start="6398" selection-end="6398" vertical-scroll-proportion="-11.2">
+        <state line="158" column="17" selection-start="7815" selection-end="7815" vertical-scroll-proportion="-9.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#850#5076#0" expanded="true" />
-            <element signature="e#5056#5057#0" expanded="true" />
-            <element signature="e#5078#5822#0" expanded="true" />
-            <element signature="e#5261#5779#0" expanded="true" />
-            <element signature="e#5752#5753#0" expanded="true" />
-            <element signature="e#5803#5804#0" expanded="true" />
-            <element signature="e#5922#6741#0" expanded="true" />
-            <element signature="e#6202#6715#0" expanded="true" />
-            <element signature="e#6696#6697#0" expanded="true" />
-            <element signature="e#6730#6731#0" expanded="true" />
+            <element signature="e#1292#5513#0" expanded="true" />
+            <element signature="e#5493#5494#0" expanded="true" />
+            <element signature="e#5515#6259#0" expanded="true" />
+            <element signature="e#5698#6216#0" expanded="true" />
+            <element signature="e#6189#6190#0" expanded="true" />
+            <element signature="e#6240#6241#0" expanded="true" />
+            <element signature="e#6359#7685#0" expanded="true" />
+            <element signature="e#6639#7659#0" expanded="true" />
+            <element signature="e#7640#7641#0" expanded="true" />
+            <element signature="e#7674#7675#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable/ic_launcher.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="47" selection-start="626" selection-end="626" vertical-scroll-proportion="0.5102041">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
