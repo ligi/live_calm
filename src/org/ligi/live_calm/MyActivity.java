@@ -7,7 +7,10 @@ import com.androidquery.AQuery;
 import com.dsi.ant.plugins.AntPluginMsgDefines;
 import com.dsi.ant.plugins.AntPluginPcc;
 import com.dsi.ant.plugins.AntPluginPcc.IDeviceStateChangeReceiver;
+import com.dsi.ant.plugins.antplus.legacycommon.AntPlusLegacyCommonPcc;
 import com.dsi.ant.plugins.antplus.pcc.AntPlusHeartRatePcc;
+
+import java.math.BigDecimal;
 
 public class MyActivity extends Activity {
 
@@ -33,7 +36,7 @@ public class MyActivity extends Activity {
 
                                 String s = result.getDeviceName() + ": " + AntPlusHeartRatePcc.statusCodeToPrintableString(initialDeviceStateCode);
                                 mAQuery.find(R.id.device_name).getTextView().setText(s);
-                                //subscribeToEvents();
+                                subscribeToEvents();
                                 break;
 
                             case AntPluginMsgDefines.MSG_REQACC_RESULT_whatCHANNELNOTAVAILABLE:
@@ -85,10 +88,6 @@ public class MyActivity extends Activity {
                         }
                     }
 
-                    private void subscribeToEvents() {
-
-                    }
-
                 }, new IDeviceStateChangeReceiver() {
                     @Override
                     public void onDeviceStateChange(final int newDeviceState) {
@@ -107,4 +106,24 @@ public class MyActivity extends Activity {
         );
     }
 
+    private void subscribeToEvents() {
+        hrPcc.subscribeHeartRateDataEvent(new AntPlusHeartRatePcc.IHeartRateDataReceiver() {
+            @Override
+            public void onNewHeartRateData(final int currentMessageCount,
+                                           final int computedHeartRate, final long heartBeatCounter) {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        mAQuery.find(R.id.rcvCount).getTextView().setText(String.valueOf(currentMessageCount));
+                        mAQuery.find(R.id.rate).getTextView().setText("" + computedHeartRate);
+                        /*tv_computedHeartRate.setText(String.valueOf(computedHeartRate));
+                        tv_heartBeatCounter.setText(String.valueOf(heartBeatCounter));*/
+                    }
+                });
+            }
+        });
+
+
+    }
 }
+
