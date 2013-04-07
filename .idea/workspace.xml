@@ -38,7 +38,7 @@
     <file path="/strings.xml" changelist="5bcc4b86-9f85-4987-9492-7672271f0b71" time="1365338661796" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="5bcc4b86-9f85-4987-9492-7672271f0b71" time="1365341720862" ignored="false" />
     <file path="$PROJECT_DIR$/gen/org/ligi/live_calm/R.java" changelist="5bcc4b86-9f85-4987-9492-7672271f0b71" time="1365341742185" ignored="false" />
-    <file path="/Dummy.txt" changelist="5bcc4b86-9f85-4987-9492-7672271f0b71" time="1365344177666" ignored="false" />
+    <file path="/Dummy.txt" changelist="5bcc4b86-9f85-4987-9492-7672271f0b71" time="1365344184810" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -489,7 +489,11 @@
       <created>1365344180265</created>
       <updated>1365344180265</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update idea setup">
+      <created>1365344202231</created>
+      <updated>1365344202231</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">

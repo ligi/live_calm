@@ -8,30 +8,35 @@
     <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Hello World, MyActivity"
-            android:id="@+id/device_name"/>
-
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New Text"
+            android:text="Not connected yet - plug in ANT+ OTG"
             android:id="@+id/status"
+            android:textAppearance="?android:textAppearanceLarge"
             />
 
+
     <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="New Text"
+            android:text="Not connected yet - plug in ANT+ OTG"
             android:id="@+id/rcvCount"
+            android:textAppearance="?android:textAppearanceLarge"
             />
+
 
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Text"
-            android:id="@+id/rate"
+            android:text="No data yet"
+            android:id="@+id/act"
             />
 
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No min yet"
+            android:id="@+id/min"
+            />
 
 </LinearLayout>
 

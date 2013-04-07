@@ -1,26 +1,37 @@
 package org.ligi.live_calm;
 
 import android.app.Activity;
+import android.content.Context;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 import com.androidquery.AQuery;
 import com.dsi.ant.plugins.AntPluginMsgDefines;
 import com.dsi.ant.plugins.AntPluginPcc;
 import com.dsi.ant.plugins.AntPluginPcc.IDeviceStateChangeReceiver;
-import com.dsi.ant.plugins.antplus.legacycommon.AntPlusLegacyCommonPcc;
 import com.dsi.ant.plugins.antplus.pcc.AntPlusHeartRatePcc;
 
-import java.math.BigDecimal;
 
-public class MyActivity extends Activity {
+public class MyActivity extends Activity implements LocationListener {
 
     private AntPlusHeartRatePcc hrPcc = null;
     private AQuery mAQuery;
+    private int mActMin = Integer.MAX_VALUE;
+    private LocationManager locationManager;
+    private Location mLastLocation;
+    private Location mMinLocation;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+
+        locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,10, 1, this);
 
         mAQuery = new AQuery(this);
 
@@ -35,7 +46,7 @@ public class MyActivity extends Activity {
                                 hrPcc = result;
 
                                 String s = result.getDeviceName() + ": " + AntPlusHeartRatePcc.statusCodeToPrintableString(initialDeviceStateCode);
-                                mAQuery.find(R.id.device_name).getTextView().setText(s);
+                                mAQuery.find(R.id.status).getTextView().setText(s);
                                 subscribeToEvents();
                                 break;
 
@@ -115,9 +126,25 @@ public class MyActivity extends Activity {
                     @Override
                     public void run() {
                         mAQuery.find(R.id.rcvCount).getTextView().setText(String.valueOf(currentMessageCount));
-                        mAQuery.find(R.id.rate).getTextView().setText("" + computedHeartRate);
-                        /*tv_computedHeartRate.setText(String.valueOf(computedHeartRate));
-                        tv_heartBeatCounter.setText(String.valueOf(heartBeatCounter));*/
+
+
+                        if (computedHeartRate<mActMin) {
+                            mActMin = computedHeartRate;
+                            mMinLocation=mLastLocation;
+                        }
+
+                        String rateString=""+computedHeartRate;
+                        if (mLastLocation!=null) {
+                            rateString+= " at " + mLastLocation.toString();
+                        }
+
+                        mAQuery.find(R.id.act).getTextView().setText( rateString);
+                        rateString=""+mActMin;
+                        if (mLastLocation!=null) {
+                            rateString+= " at " + mMinLocation.toString();
+                        }
+                        mAQuery.find(R.id.min).getTextView().setText(rateString);
+
                     }
                 });
             }
@@ -125,5 +152,24 @@ public class MyActivity extends Activity {
 
 
     }
+
+    @Override
+    public void onLocationChanged(Location location) {
+        mLastLocation=location;
+        Log.i("","act_loc"+location.toString());
+    }
+
+    @Override
+    public void onStatusChanged(String s, int i, Bundle bundle) {
+    }
+
+    @Override
+    public void onProviderEnabled(String s) {
+    }
+
+    @Override
+    public void onProviderDisabled(String s) {
+    }
+
 }
 
